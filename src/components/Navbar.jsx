@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <div className='bg-gray-900 text-green-500 min-h-[8vh]'>
       <div className='flex justify-between mx-auto items-center md:w-3/5 w-[95%] min-h-[8vh]  '>
-        <div className='font-bold md:text-2xl '>
+        <div className='font-bold text-2xl '>
             <span>&lt;</span>
             <span className='text-white'>Hush</span>
             <span>Key</span>
