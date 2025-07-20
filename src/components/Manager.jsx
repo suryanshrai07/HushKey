@@ -36,7 +36,10 @@ const Manager = () => {
   };
 
   const savePassword = () => {
-    if (form.site === "" || form.usernam === "" || form.password === "") return;
+    if (form.site === "" || form.username === "" || form.password === "") {
+      clipboardText("All fields are required!")
+      return;
+    }
 
     clipboardText("Password Saved!");
 
@@ -198,7 +201,7 @@ const Manager = () => {
                             </td>
                             <td>
                               <div className="flex justify-evenly flex-col md:flex-row items-center md:gap-5  ">
-                                <div className="break-all">{site.password}</div>
+                                <div className="break-all">{"*".repeat(site.password.length)}</div>
                                 <div>
                                   <lord-icon
                                     src="https://cdn.lordicon.com/exymduqj.json"
