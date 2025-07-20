@@ -197,7 +197,7 @@ const Manager = () => {
                               <div className="break-all">{site.username}</div>
                             </td>
                             <td>
-                              <div className="flex justify-center flex-col md:flex-row items-center md:gap-5  ">
+                              <div className="flex justify-evenly flex-col md:flex-row items-center md:gap-5  ">
                                 <div className="break-all">{site.password}</div>
                                 <div>
                                   <lord-icon
